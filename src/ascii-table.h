@@ -1,16 +1,11 @@
-#pragma once
+#ifndef ASCII_TABLE_H
+#define ASCII_TABLE_H
 
 /*
 * Made by Nathan Kolpa
 */
 
-inline unsigned char convertToChar(int ASCIICode)
-{
-	return (unsigned char)ASCIICode;
-}
-
-
-enum ASCII
+enum AsciiTable
 {
   //control characters
 
@@ -159,9 +154,7 @@ enum ASCII
 
 	DEL,                                             // Delete
 
-
 	//===================[extended ASCII]===================\\	                 
-
 
 	//misc letters					                 
 
@@ -312,3 +305,5 @@ enum ASCII
 	BLACK_SQUARE,                                    // ■
 	SPACE_NO_BREAK,                                  //
 };
+
+#endif
